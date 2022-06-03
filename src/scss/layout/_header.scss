@@ -3,23 +3,28 @@
 .l-header {
   position: relative;
   width: 100%;
-  height: 60px;
-  background-color: $c-base;
+  margin-bottom: 20px;
+  background-color: $c-main;
   @include mq {
-    height: 90px;
+    margin-bottom: 50px;
   }
   &__inner {
     position: relative;
-    overflow-x: hidden;
     width: 100%;
     padding: 20px;
     @include mq {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
+      max-width: $inner_width;
       height: 100%;
       padding: 0 70px;
+    }
+  }
+  &__title{
+    color: $c-base;
+    font-size: 24px;
+    text-align: center;
+    line-height: 2;
+    @include mq {
+      font-size: 32px;
     }
   }
 }

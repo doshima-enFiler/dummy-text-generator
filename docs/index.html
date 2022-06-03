@@ -15,18 +15,18 @@
         </div>
       </header>
       <main class="l-main">
-        <div class="l-main_inner">
+        <div class="l-main__inner">
           <section class="p-generator">
             <div class="p-generator-setting">
               <div class="p-generator-setting__bar">
                 <p class="p-generator-setting__heading">出力設定</p>
-                <button type="button" name="reset" id="reset">クリア</button>
+                <button class="p-generator-setting__button" type="button" name="reset" id="reset">クリア</button>
               </div>
-              <select name="text" id="text">
-                <option value="これはダミーです" selected="">
+              <div class="p-generator-setting__body">
+              <select name="text" id="dummyTitle">
+                <option value="これはダミーです" selected>
                   これはダミーです。
                 </option>
-                <option value="ダミーテキスト">ダミーテキスト</option>
                 <option value="山路を登りながら">山路を登りながら</option>
                 <option value="あのイーハトーヴォのすきとおった風">
                   あのイーハトーヴォのすきとおった風
@@ -35,7 +35,7 @@
               </select>
               <p class="p-generator-setting__count">
                 <span class="p-generator-setting__count-text">文字数</span>
-                <input type="text" name="num" value="" size="6" id="num" />
+                <input type="number" name="num" value="50" size="6" id="num" />
                 <span class="p-generator-setting__count-text">文字</span>
               </p>
               <div class="p-generator-setting__create">
@@ -44,17 +44,18 @@
                 </button>
               </div>
             </div>
+            </div>
             <div class="p-generator-result">
               <div class="p-generator-result__bar">
                 <p class="p-generator-result__heading">出力結果</p>
-                <button type="button" name="select" id="select">選択</button>
+                <button class="p-generator-result__button" type="button" name="select" id="select">選択</button>
               </div>
               <p class="p-generator-result__result-data">
                 <textarea
                   cols="40"
                   rows="6"
                   name="dummytext"
-                  id="dummytext"
+                  id="dummyText"
                 ></textarea>
               </p>
             </div>
@@ -63,7 +64,7 @@
       </main>
       <footer class="l-footer">
         <div class="l-footer__inner">
-          <small class="l-footer__copyright-text">&copy; 2022 oshima daiki</small>
+          <small class="l-footer__copyright">&copy; 2022 oshima daiki</small>
         </div>
       </footer>
     </div>

@@ -1,0 +1,68 @@
+// mixinとかfunctionとかを@useでインポート
+@use '../foundation/setting' as *;
+
+.p-generator{
+  background-color: $c-base;
+  padding: 20px;
+  border-radius: 10px;
+  @include mq{
+    padding: 50px;
+  }
+  &__setting{
+    border: 1px solid $c-main;
+  }
+}
+
+.p-generator-setting{
+  border: 1px solid $c-main;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  &__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: $c-main;
+    color: $c-base;
+  }
+  &__heading{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__button{
+    min-width: 20%;
+    border-radius: 5px;
+    background-color: $c-base;
+    font-size: 14px;
+    color: initial;
+    padding: 0 5px;
+  }
+  &__create{
+    width: 70%;
+  }
+}
+
+.p-generator-result{
+  border: 1px solid $c-main;
+  border-radius: 5px;
+  &__bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background-color: $c-main;
+    color: $c-base;
+  }
+  &__heading{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__button{
+    min-width: 20%;
+    border-radius: 5px;
+    background-color: $c-base;
+    font-size: 14px;
+    color: initial;
+    padding: 0 5px;
+  }
+}

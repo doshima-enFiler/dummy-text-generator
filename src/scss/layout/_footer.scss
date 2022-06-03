@@ -3,35 +3,16 @@
 .l-footer{
   background-color: $c-main;
   &__inner{
-    padding: 30px 20px;
+    padding: 10px 0;
     @include mq{
-      max-width: 1110px;
+      max-width: $inner_width;
       margin: 0 auto;
-      padding: 50px 0;
-    }
-  }
-  &_nav{
-    margin-bottom: 16px;
-  }
-  &__list{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-  }
-  &__item{
-    margin-right: 25px;
-  }
-  &__link{
-    color: #fff;
-    font-size: rem(12px);
-    @include mq{
-      font-size: rem(14px);
+      padding: 20px 0;
     }
   }
   &__copyright{
+    display: block;
     color: #fff;
-    @include mq{
-      font-style: rem(12px);
-    }
+    text-align: center;
   }
 }

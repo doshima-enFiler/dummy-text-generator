@@ -1,14 +1,26 @@
 // l-main関係とbody直下のl-wrapperのスタイル
 @use '../foundation/setting' as *;
 
+.l-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 .l-main{
   position: relative;
+  display: block;  // for IE
+  flex: 1 0 auto;
+  margin-bottom: 20px;
+  @include mq{
+    margin-bottom: 50px;
+  }
   &__inner{
     position: relative;
-    padding: 0 20px;
+    padding: 0 10px;
     @include mq{
-      max-width: 1110px;
+      max-width: $inner_width;
       margin: 0 auto;
+      padding: 0 ;
     }
   }
 }
