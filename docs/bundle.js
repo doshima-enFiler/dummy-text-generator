@@ -1,0 +1,1 @@
+$((function(){$(".p-top-works__tab.js-tab").click((function(){const s=$(this).index();$(".p-top-works__tab.js-tab").removeClass("is-active").eq(s).addClass("is-active"),$(".p-top-works__panel").removeClass("is-active").eq(s).addClass("is-active")}))}));

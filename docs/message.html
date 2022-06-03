@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>メッセージ|START</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
+        <div class="l-header__inner">
+          <div class="l-header__logo">
+            <a href="/"><img src="./images/logo.svg" alt="" /></a>
+          </div>
+          <div class="l-header-hamburger js-hamburger">
+            <span class="l-header-hamburger__line"></span>
+            <span class="l-header-hamburger__line"></span>
+            <span class="l-header-hamburger__line"></span>
+          </div>
+          <nav class="l-header__nav">
+            <ul class="l-header__list">
+              <li class="l-header__item">
+                <a class="l-header__link is-now" href="./index.html">ホーム</a>
+              </li>
+              <li class="l-header__item">
+                <a class="l-header__link" href="./message.html">メッセージ</a>
+              </li>
+              <li class="l-header__item">
+                <a class="l-header__link" href="./company.html">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="l-main">
+        <div class="l-main_inner">
+          <!-- messageページのmvセクション -->
+          <section class="p-message-mv">
+            <div class="p-masssage-mv__inner">
+              <h1 class="p-message-mv-heading">メッセージ</h1>
+              <div class="p-message-mv__mv">
+                <picture class="p-message-mv__images">
+                  <source
+                    srcset="./images/pc_bg_mv.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img src="./images/sp_mv.jpg" alt="メッセージ" />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <!-- messageページのセクション -->
+          <section class="p-message-greeting">
+            <div class="p-message-greeting__inner">
+              <h2 class="p-message-greeting__heading">「仕事」をきっかけに<br>人生の新しいスタートを！</h2>
+              <p class="p-message-greeting__heading-sub">大事なお仕事探しを応援させてください</p>
+              <div class="p-message-greeting__content">
+                <div class="p-message-greeting__text">はじめまして。代表取締役社長のショーン・デイビット・ジュニアです。<br>私はそこそこ幸せです。それは仕事が楽しいからです。もちろん仕事イコール人生ではありません。でも仕事は人生の大事な基盤のように思っています。<br>株式会社STARTは、みなさんが仕事をきっかけに理想の人生を実現する手助けをしています。幸せにつながるお仕事紹介サービス<a href="#">『スタート』</a>や、共通の目標を目指す仲間が見つかる人材紹介SNS<a href="#">『ゴール』</a>を運営しています。また、Webデザインの基礎スキルを身につけられるスクール<a href="#">『Webの学校』</a>も随時開講しています。</div>
+                <img src="./images/ceo.jpg" alt="代表取締役社長 ショーン・デイビット・ジュニア" class="p-message-greeting__image">
+              </div>
+            </div>
+          </section>
+          <section class="p-message-office">
+            <div class="p-message-office__inner">
+              <img class="p-message-offive__image" src="./images/office.jpg" alt="オフィス">
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <nav class="l-footer__nav">
+            <ul class="l-footer__list">
+              <li class="l-footer__item">
+                <a href="./index.html" class="l-footer__link">ホーム</a>
+              </li>
+              <li class="l-footer__item">
+                <a href="./message.html" class="l-footer__link">メッセージ</a></li>
+              <li class="l-footer__item">
+                <a href="./company.html" class="l-footer__link">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-footer__copyright">
+            <small class="l-footer__copyright-text">&copy;START</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

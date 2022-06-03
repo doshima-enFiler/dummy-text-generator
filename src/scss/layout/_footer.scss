@@ -1,0 +1,37 @@
+@use '../foundation/setting' as *;
+
+.l-footer{
+  background-color: $c-main;
+  &__inner{
+    padding: 30px 20px;
+    @include mq{
+      max-width: 1110px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+  }
+  &_nav{
+    margin-bottom: 16px;
+  }
+  &__list{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+  &__item{
+    margin-right: 25px;
+  }
+  &__link{
+    color: #fff;
+    font-size: rem(12px);
+    @include mq{
+      font-size: rem(14px);
+    }
+  }
+  &__copyright{
+    color: #fff;
+    @include mq{
+      font-style: rem(12px);
+    }
+  }
+}

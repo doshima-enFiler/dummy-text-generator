@@ -1,0 +1,14 @@
+// l-main関係とbody直下のl-wrapperのスタイル
+@use '../foundation/setting' as *;
+
+.l-main{
+  position: relative;
+  &__inner{
+    position: relative;
+    padding: 0 20px;
+    @include mq{
+      max-width: 1110px;
+      margin: 0 auto;
+    }
+  }
+}

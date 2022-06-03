@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>会社概要|START</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="l-wrapper">
+      <header class="l-header">
+        <div class="l-header__inner">
+          <div class="l-header__logo">
+            <a href="/"><img src="./images/logo.svg" alt="" /></a>
+          </div>
+          <div class="l-header-hamburger js-hamburger">
+            <span class="l-header-hamburger__line"></span>
+            <span class="l-header-hamburger__line"></span>
+            <span class="l-header-hamburger__line"></span>
+          </div>
+          <nav class="l-header__nav">
+            <ul class="l-header__list">
+              <li class="l-header__item">
+                <a class="l-header__link is-now" href="./index.html">ホーム</a>
+              </li>
+              <li class="l-header__item">
+                <a class="l-header__link" href="./message.html">メッセージ</a>
+              </li>
+              <li class="l-header__item">
+                <a class="l-header__link" href="./company.html">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="l-main">
+        <div class="l-main_inner">
+          <!-- companyページのmvセクション -->
+          <section class="p-company-mv">
+            <div class="p-masssage-mv__inner">
+              <h1 class="p-company-mv-heading">会社概要</h1>
+              <div class="p-company-mv__mv">
+                <picture class="p-company-mv__images">
+                  <source
+                    srcset="./images/pc_bg_mv.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <img src="./images/sp_mv.jpg" alt="会社概要" />
+                </picture>
+              </div>
+            </div>
+          </section>
+          <!-- companyページのセクション -->
+          <section class="p-company-info">
+            <div class="p-company-info__inner">
+              <table class="p-company-info__table">
+                <tbody class="p-company-info__table-body">
+                  <tr class="p-company-info__item">
+                    <th class="p-company-info__item-heading">社名</th>
+                    <td class="p-company-info__item-data">株式会社START</td>
+                  </tr>
+                  <tr class="p-company-info__item">
+                    <th class="p-company-info__item-heading">設立</th>
+                    <td class="p-company-info__item-data">2025.02.10</td>
+                  </tr>
+                  <tr class="p-company-info__item">
+                    <th class="p-company-info__item-heading">代表取締役</th>
+                    <td class="p-company-info__item-data">ショーン・デイビット・ジュニア</td>
+                  </tr>
+                  <tr class="p-company-info__item">
+                    <th class="p-company-info__item-heading">資本金</th>
+                    <td class="p-company-info__item-data">10,000,000円</td>
+                  </tr>
+                  <tr class="p-company-info__item">
+                    <th class="p-company-info__item-heading">所在地</th>
+                    <td class="p-company-info__item-data">〒555-5555 東京都千代田区 スタートビルディング 606</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="p-company-map">
+            <div class="p-company-map__inner">
+              <img class="p-company-map__image" src="./images/map.png" alt="所在地">
+            </div>
+          </section>
+          <section class="p-company-news">
+            <div class="p-company-news__inner">
+              <div class="p-company-news__list">
+                <a href="" class="p-company-news__link">
+                  <time class="p-company-news__date">2023.02.10</time>
+                  <p class="p-company-news__text">
+                    コーポレートサイトをリニューアルしました。
+                  </p>
+                </a>
+                <a href="" class="p-company-news__link">
+                  <time class="p-company-news__date">2023.02.08</time>
+                  <p class="p-company-news__text">
+                    採用を強化中です！一緒に働きませんか？
+                  </p>
+                </a>
+                <a href="" class="p-company-news__link">
+                  <time class="p-company-news__date">2022.02.02</time>
+                  <p class="p-company-news__text">
+                    人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！
+                  </p>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="l-footer">
+        <div class="l-footer__inner">
+          <nav class="l-footer__nav">
+            <ul class="l-footer__list">
+              <li class="l-footer__item">
+                <a href="./index.html" class="l-footer__link">ホーム</a>
+              </li>
+              <li class="l-footer__item">
+                <a href="./message.html" class="l-footer__link">メッセージ</a></li>
+              <li class="l-footer__item">
+                <a href="./company.html" class="l-footer__link">会社概要</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="l-footer__copyright">
+            <small class="l-footer__copyright-text">&copy;START</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
