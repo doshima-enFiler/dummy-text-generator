@@ -20,7 +20,7 @@
             <div class="p-generator-setting">
               <div class="p-generator-setting__bar">
                 <p class="p-generator-setting__heading">出力設定</p>
-                <button class="p-generator-setting__button" type="button" name="reset" id="reset">クリア</button>
+                <button class="p-generator-setting__button" type="button" name="reset" id="reset">リセット</button>
               </div>
               <div class="p-generator-setting__body">
               <select name="text" id="dummyTitle">
@@ -48,15 +48,10 @@
             <div class="p-generator-result">
               <div class="p-generator-result__bar">
                 <p class="p-generator-result__heading">出力結果</p>
-                <button class="p-generator-result__button" type="button" name="select" id="select">選択</button>
+                <button class="p-generator-result__button" type="button" name="select" id="select">すべて選択</button>
               </div>
-              <p class="p-generator-result__result-data">
-                <textarea
-                  cols="40"
-                  rows="6"
-                  name="dummytext"
-                  id="dummyText"
-                ></textarea>
+              <p class="p-generator-result__data-area">
+                <textarea class="p-generator-result__data" cols="40" rows="6" name="dummytext" id="dummyText"></textarea>
               </p>
             </div>
           </section>
@@ -68,6 +63,6 @@
         </div>
       </footer>
     </div>
-    <script src="./bundle.js"></script>
+    <script src="./App.js"></script>
   </body>
 </html>

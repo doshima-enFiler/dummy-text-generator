@@ -8,7 +8,7 @@ const enabledSourceMap = mode === 'development';
 module.exports = {
   mode: mode,
   entry: {
-    "bundle": "./src/js/index.js",
+    "App": "./src/js/index.js",
     "style": "./src/scss/style.scss",
   },
   output: {
