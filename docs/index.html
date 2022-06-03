@@ -4,144 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>START</title>
+    <title>ダミーテキストジェネレーター</title>
     <link rel="stylesheet" href="./style.css" />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
-      rel="stylesheet">
   </head>
   <body>
     <div class="l-wrapper">
       <header class="l-header">
         <div class="l-header__inner">
-          <div class="l-header__logo">
-            <a class="l-header__logo-link" href="/"><img class="l-header__logo-img" src="./images/logo.svg" alt="START" /></a>
-          </div>
-          <div class="l-header__hamburger js-hamburger">
-            <span class="l-header__hamburger-line"></span>
-            <span class="l-header__hamburger-line"></span>
-            <span class="l-header__hamburger-line"></span>
-          </div>
-          <nav class="l-header__nav">
-            <ul class="l-header__list">
-              <li class="l-header__item">
-                <a class="l-header__link is-now" href="./index.html">ホーム</a>
-              </li>
-              <li class="l-header__item">
-                <a class="l-header__link" href="./message.html">メッセージ</a>
-              </li>
-              <li class="l-header__item">
-                <a class="l-header__link" href="./company.html">会社概要</a>
-              </li>
-            </ul>
-          </nav>
+          <h1 class="l-header__title">ダミーテキストジェネレーター</h1>
         </div>
       </header>
       <main class="l-main">
         <div class="l-main_inner">
-          <!-- topページのmvセクション -->
-          <section class="p-top-mv">
-            <div class="p-top-mv__inner">
-              <h1 class="p-top-mv__heading">START</h1>
-              <p class="p-top-mv__catch">仕事に最高のスタートを。</p>
-              <div class="p-top-mv__mv">
-                <picture class="p-top-mv__images">
-                  <source
-                    srcset="./images/pc_bg_mv.jpg"
-                    media="(min-width: 600px)"
-                  />
-                  <img src="./images/sp_mv.jpg" alt="START 仕事に最高のスタートを。" />
-                </picture>
+          <section class="p-generator">
+            <div class="p-generator-setting">
+              <div class="p-generator-setting__bar">
+                <p class="p-generator-setting__heading">出力設定</p>
+                <button type="button" name="reset" id="reset">クリア</button>
+              </div>
+              <select name="text" id="text">
+                <option value="これはダミーです" selected="">
+                  これはダミーです。
+                </option>
+                <option value="ダミーテキスト">ダミーテキスト</option>
+                <option value="山路を登りながら">山路を登りながら</option>
+                <option value="あのイーハトーヴォのすきとおった風">
+                  あのイーハトーヴォのすきとおった風
+                </option>
+                <option value="lorem ipsum">lorem ipsum</option>
+              </select>
+              <p class="p-generator-setting__count">
+                <span class="p-generator-setting__count-text">文字数</span>
+                <input type="text" name="num" value="" size="6" id="num" />
+                <span class="p-generator-setting__count-text">文字</span>
+              </p>
+              <div class="p-generator-setting__create">
+                <button type="button" name="create" id="create">
+                  テキストを出力
+                </button>
+                <!-- tooltipの中身 -->
+                <div class="p-generator-setting__announce">
+                  <div class="p-generator-setting__announce-inner">
+                    <p class="p-generator-setting__announce-text">変換が完了しました。</p>
+                  </div>
+                </div>
+                <!-- tooltipの中身 -->
               </div>
             </div>
-          </section>
-          <!-- topページのnewsセクション -->
-          <section class="p-top-news">
-            <div class="p-top-news__inner">
-              <h2 class="p-top-news__heading">ニュース</h2>
-              <div class="p-top-news__list">
-                <a href="" class="p-top-news__link">
-                  <time class="p-top-news__date">2023.02.10</time>
-                  <p class="p-top-news__text">
-                    コーポレートサイトをリニューアルしました。
-                  </p>
-                </a>
-                <a href="" class="p-top-news__link">
-                  <time class="p-top-news__date">2023.02.08</time>
-                  <p class="p-top-news__text">
-                    採用を強化中です！一緒に働きませんか？
-                  </p>
-                </a>
-                <a href="" class="p-top-news__link">
-                  <time class="p-top-news__date">2022.02.02</time>
-                  <p class="p-top-news__text">
-                    人材紹介SNS『スタート』をリリースしました。3/31まで新規登録キャンペーンを開催中です！サービス内で使える500ポイントをプレゼント！
-                  </p>
-                </a>
+            <div class="p-generator-result">
+              <div class="p-generator-result__bar">
+                <p class="p-generator-result__heading">出力結果</p>
+                <button type="button" name="select" id="select">選択</button>
               </div>
-            </div>
-          </section>
-          <!-- topページのserviceセクション -->
-          <section class="p-top-service">
-            <div class="p-top-service__inner">
-              <h2 class="p-top-service__heading">サービス</h2>
-              <p class="p-top-service__heading-sub">SERVICE</p>
-              <div class="p-top-service__content">
-                <div class="p-top-servive__item">
-                  <div class="p-top-service__item-icon">
-                    <span class="material-icons"> work </span>
-                  </div>
-                  <h3 class="p-top-service__item-heading">人材紹介業</h3>
-                  <p class="p-top-service__item-text">
-                    新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。
-                  </p>
-                </div>
-                <div class="p-top-servive__item">
-                  <div class="p-top-service__item-icon">
-                    <span class="material-icons">
-                      location_city
-                    </span>
-                  </div>
-                  <h3 class="p-top-service__item-heading">スクール事業</h3>
-                  <p class="p-top-service__item-text">
-                    オンラインでWeb制作を学べるスクールを運営しています。
-                  </p>
-                </div>
-                <div class="p-top-servive__item">
-                  <div class="p-top-service__item-icon">
-                    <span class="material-icons material-icons-outlined"> tv </span>
-                  </div>
-                  <h3 class="p-top-service__item-heading">Webメディア運営</h3>
-                  <p class="p-top-service__item-text">
-                    人事系メディアやWebデザイン関連のメディアなどを複数運営しています。
-                  </p>
-                </div>
-              </div>
+              <p class="p-generator-result__result-data">
+                <textarea
+                  cols="40"
+                  rows="6"
+                  name="dummytext"
+                  id="dummytext"
+                ></textarea>
+              </p>
             </div>
           </section>
         </div>
       </main>
       <footer class="l-footer">
         <div class="l-footer__inner">
-          <nav class="l-footer__nav">
-            <ul class="l-footer__list">
-              <li class="l-footer__item">
-                <a href="./index.html" class="l-footer__link">ホーム</a>
-              </li>
-              <li class="l-footer__item">
-                <a href="./message.html" class="l-footer__link">メッセージ</a></li>
-              <li class="l-footer__item">
-                <a href="./company.html" class="l-footer__link">会社概要</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="l-footer__copyright">
-            <small class="l-footer__copyright-text">&copy;START</small>
-          </div>
+          <small class="l-footer__copyright-text"
+            >&copy; 2022 oshima daiki</small
+          >
         </div>
       </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" ></script>
     <script src="./bundle.js"></script>
   </body>
 </html>

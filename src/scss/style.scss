@@ -2,7 +2,4 @@
 
 @use "./foundation";
 @use "./layout";
-@use "./object/component";
-@use "./object/project";
-@use "./object/utility/utility";
-@use "./lib/style.scss";
+@use "./project";
