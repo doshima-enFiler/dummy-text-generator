@@ -1,23 +1,23 @@
 // mixinとかfunctionとかを@useでインポート
 @use '../foundation/setting' as *;
 
-.p-generator{
+.p-generator {
   background-color: $c-base;
   padding: 20px;
   border-radius: 10px;
-  @include mq{
+  @include mq {
     padding: 50px;
   }
-  &__setting{
+  &__setting {
     border: 1px solid $c-main;
   }
 }
 
-.p-generator-setting{
+.p-generator-setting {
   border: 1px solid $c-main;
   border-radius: 5px;
   margin-bottom: 50px;
-  &__bar{
+  &__bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,11 +25,11 @@
     background-color: $c-main;
     color: $c-base;
   }
-  &__heading{
+  &__heading {
     font-size: 20px;
     font-weight: bold;
   }
-  &__button{
+  &__button {
     min-width: 20%;
     border-radius: 5px;
     background-color: $c-base;
@@ -37,15 +37,58 @@
     color: initial;
     padding: 0 5px;
   }
-  &__create{
-    width: 70%;
+  &__body {
+    margin: 20px 10px;
+    padding: 0 20px;
+    @include mq{
+      width: 600px;
+      margin: 20px auto;
+    }
+  }
+  &__select{
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 0 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  &__count{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__count-text{
+    margin-left: .5rem;
+  }
+  &__count-data{
+    padding: 10px;
+    font-size: 14px;
+  }
+  &__create {
+    display: block;
+    background-color: #fff;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 8px 0;
+    border: 2px solid $c-main;
+    border-radius: 5px;
+    color: $c-main;
+    box-shadow: 0 1px 3px rgba($color: #000000, $alpha: 0.2);
+    transition: all .3s;
+    &:hover{
+      background-color: $c-main;
+      box-shadow: 0 0 0 transparent;
+      color: #fff;
+    }
   }
 }
 
-.p-generator-result{
+.p-generator-result {
   border: 1px solid $c-main;
   border-radius: 5px;
-  &__bar{
+  &__bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,11 +96,11 @@
     background-color: $c-main;
     color: $c-base;
   }
-  &__heading{
+  &__heading {
     font-size: 20px;
     font-weight: bold;
   }
-  &__button{
+  &__button {
     min-width: 20%;
     border-radius: 5px;
     background-color: $c-base;
@@ -65,10 +108,10 @@
     color: initial;
     padding: 0 5px;
   }
-  &__data-area{
+  &__data-area {
     padding: 8px 8px 0;
   }
-  &__data{
+  &__data {
     resize: none;
     border-radius: 5px;
     width: 100%;
